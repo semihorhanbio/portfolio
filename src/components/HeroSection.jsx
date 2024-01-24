@@ -9,18 +9,18 @@ const HeroSection = () => {
       <div className="col-span-7 place-self-center place-items-center grid lg:place-items-start">
         <h1 className="text-white max-w-2xl mb-4 lg:text-6xl text-4xl font-extrabold">
           <span className="text-transparent text-6xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-            Hello, I am{" "}
+            Hello, I'm{" "}
           </span>{" "}
           <br></br>
           <TypeAnimation
             sequence={[
-              "Semih",
+              "Judy",
               1000,
-              "Web3 Developer",
+              "Web Developer",
               1000,
-              "Blockchain Developer",
+              "Mobile Developer",
               1000,
-              "Full-Stack Developer",
+              "UI/UX Designer",
               1000,
             ]}
             wrapper="span"
