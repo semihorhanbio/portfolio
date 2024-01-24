@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useTransition } from "react";
+import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 
@@ -13,8 +13,8 @@ const TAB_DATA = [
         <li>Express</li>
         <li>PostgreSQL</li>
         <li>Sequelize</li>
-        <li>MongoDB</li>
-        <li>Mongoose</li>
+        <li>JavaScript</li>
+        <li>React</li>
       </ul>
     ),
   },
@@ -52,11 +52,11 @@ const AboutSection = () => {
 
   return (
     <section className="text-white">
-      <div className="gap-8 items-center py-8 px-4 xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-16">
+      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image src="/images/about-image.png" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-white texxt-base md:text-lg">
+          <p className="text-base lg:text-lg">
             I am a full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience
             working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
@@ -69,19 +69,22 @@ const AboutSection = () => {
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
-              Skills
+              {" "}
+              Skills{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
-              Education
+              {" "}
+              Education{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
             >
-              Certifications
+              {" "}
+              Certifications{" "}
             </TabButton>
           </div>
           <div className="mt-8">
