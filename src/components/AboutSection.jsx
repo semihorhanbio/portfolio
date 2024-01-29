@@ -44,7 +44,7 @@ const TAB_DATA = [
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
+  const [tab, setTab] = useState("education");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
