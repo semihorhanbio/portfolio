@@ -16,19 +16,19 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
+    title: "Person Detector",
+    description: "This Next.js 14 website is designed to use artificial intelligence to detect people, record a 30-second clip when it detects people, and save it for review later.",
     image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "AI"],
+    gitUrl: "https://github.com/semihorhanbio/person-detector",
+    previewUrl: "https://person-detector.vercel.app/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
+    title: "Web3 Keyboard Generator",
+    description: "This is a application leveraging the Ethereum ecosystem. This innovative web app allows users to create on-chain mechanical keyboards, view keyboards created by others, and send an ETH tip to their favorite designs.",
     image: "/images/projects/3.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Web3"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -92,13 +92,13 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
+          name="AI"
+          isSelected={tag === "AI"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Web3"
+          isSelected={tag === "Web3"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
